@@ -1,1 +1,1 @@
-This folder contains all the daatsets.
+This folder contains train and test daatsets.
