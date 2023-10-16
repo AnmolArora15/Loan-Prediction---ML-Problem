@@ -16,7 +16,7 @@
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Preparation](#data-preparation)
 - [Modelling](#modelling)
-- [Test Dataset](#test-dataset)
+- [Summary](#summary)
 - [Contact Information](#contact-information)
 
 ## Introduction
@@ -27,8 +27,11 @@
 - To automate this process, they have provided a dataset to identify the customers segments that are eligible for loan amount so that they can specifically target these customers.
 
 ## Problem Statement
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/loan2.jpeg)
 - The Current process is a manual process and time consuming.
 - Company has hired us as a Data Scientist to resolve their problem.
+
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/OIP.jpeg)
 
 ## Importing & Installing Libraries
 We have used several libraries in our project, including:
@@ -76,7 +79,14 @@ Our Dataset has the following features along with there dtypes
 
 ## Exploratory Data Analysis
 
-
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/loan_status.png)
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/gender.png)
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/credit_history.png)
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/marital_status.png)
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/self_employed.png)
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/heatmap.png)
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/applicant_income%26status.png)
+![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/loan_amount%26status.png)
 
 
 **Observations**
@@ -90,10 +100,10 @@ Our Dataset has the following features along with there dtypes
 - People having Loan are almost double of people not having Loan. 
 - Using the chi2 contigency test we saw -
 	- Gender and Loan Status are Independent with p = 0.66
-	Education and Loan_status are dependent with p =0.03
-	Credit_History has 100% dependency with Loan_status with p =0.00
-	Self_employed and Loan_status are Independent with p =0.93
-	Property Area and Loan Staus are higly dependent on each other with p =0.0
+	- Education and Loan_status are dependent with p =0.03
+	- Credit_History has 100% dependency with Loan_status with p =0.00
+	- Self_employed and Loan_status are Independent with p =0.93
+	- Property Area and Loan Staus are higly dependent on each other with p =0.0
 
 ## Data Preparation
 - We have created a new column of Total Income = ApplicantIncome + CoapplicantIncome.
@@ -116,10 +126,13 @@ We have deployed the following models -
 - We tried performing hyperparamter tuning on Ada Boost and XG Boost and saw an increase in Accuracy.
 - We made an app using **Gradio** to show whether a person is eligible for Loan or not.
 
-### Test Dataset
+## Summary
 - After removing all the missing values and correcting inconsistencies we applied our model on Real Test Dataset.
 - **Logistic Regression** was performing best with 77.77% accuracy on Analytics Vidya Hackathon.
 - We have secured top 5% position on Analytics Vidya Hackathon with the above approch.
+- We can further tune our other models for better accuracy.
+- We can also try removing few features which are less important in **predicting Loan Status** and see if our model performance increases.
+- We can try and work on the outliers in our continous features using domain knowledge or with client's inputs.  
 
   Thanks.
 
