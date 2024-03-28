@@ -77,7 +77,7 @@ Our Dataset has the following features along with there dtypes
 - Data types of Dependents and Credit History are changed.
 - We have replaced '3+' with '3' in 'dependent' feature.
 
-## Exploratory Data Analysis
+## Exploratory Data Analysis(EDA)
 
 ![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/loan_status.png)
 ![IMG](https://github.com/AnmolArora15/Loan-Prediction---ML-Problem/blob/main/Images/gender.png)
